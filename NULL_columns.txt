@@ -1,0 +1,32 @@
+columns to be exluded fully becuase they are irrelevant:
+-decision_monetary
+-end_date_monetary_restriction
+-account_type
+-decision_ground_reference_url
+-decision_monetary_other
+-incompatible_content_illegal
+-source_identity
+============================================================================0
+
+Filled in X, but 100% NULL in TikTok:
+category_addition
+category_specification
+category_specification_other   
+
+Filled in TikTok, but 100% NULL in X:
+end_date_visibility_restriction
+decision_monetary 
+end_date_monetary_restriction 
+end_date_service_restriction 
+end_date_account_restriction
+incompatible_content_ground
+incompatible_content_explanation
+content_type_other
+
+100% NULL in Both TikTok and X:
+decision_monetary_other
+account_type
+decision_ground_reference_url
+incompatible_content_illegal  
+content_language
+source_identity
