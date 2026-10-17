@@ -13,7 +13,9 @@ DB_PATH = DATA_ROOT / "dsa.duckdb"  # persistent catalog of views/tables, shared
 SILVER_ROOT = DATA_ROOT / "silver"
 
 PLATFORMS = ["tiktok", "x"]
+PLATFORM_NAMES = {"tiktok": "TikTok", "x": "X"}  # normalised `platform` values in Silver
 PERIOD = (date(2025, 1, 1), date(2025, 12, 31))
+SCHEMA_BREAK = "2025-07-01"  # submission schema v1 -> v2; the analysis set is content_date before this
 
 MEMORY_LIMIT = "10GB"
 

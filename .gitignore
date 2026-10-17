@@ -1,0 +1,5 @@
+# literature PDFs - not committed (size + publisher licensing)
+literature/
+
+# Python bytecode
+__pycache__/

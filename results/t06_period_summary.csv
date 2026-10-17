@@ -1,0 +1,11 @@
+platform,period,days,n_total,n_election,share_election,rel_to_baseline_a
+TikTok,baseline_a,19,53795877,1659570,0.030849,1.0
+TikTok,campaign,35,173416122,10621700,0.06125,1.9855
+TikTok,post_election,36,230517382,13232573,0.057404,1.8608
+TikTok,transition,30,183024086,6500766,0.035519,1.1514
+TikTok,baseline_b,61,175694743,5213569,0.029674,0.9619
+X,baseline_a,19,25659,0,0.0,
+X,campaign,35,38503,0,0.0,
+X,post_election,36,36631,0,0.0,
+X,transition,30,13586,0,0.0,
+X,baseline_b,61,17812,0,0.0,

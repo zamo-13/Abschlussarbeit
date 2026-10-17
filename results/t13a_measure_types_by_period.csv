@@ -1,0 +1,45 @@
+group,period,measure_type,n,period_total,share
+all statements,baseline_a,account,199258,53795877,0.003704
+all statements,baseline_a,provision of service,380416,53795877,0.007071
+all statements,baseline_a,visibility,53121729,53795877,0.987468
+all statements,baseline_a,ad not published,47030,53795877,0.000874
+all statements,baseline_a,unspecified,47444,53795877,0.000882
+all statements,campaign,account,1112121,173416122,0.006413
+all statements,campaign,provision of service,847821,173416122,0.004889
+all statements,campaign,visibility,171288733,173416122,0.987732
+all statements,campaign,ad not published,66262,173416122,0.000382
+all statements,campaign,unspecified,101185,173416122,0.000583
+all statements,post_election,account,777189,230517382,0.003371
+all statements,post_election,provision of service,941600,230517382,0.004085
+all statements,post_election,visibility,228641863,230517382,0.991864
+all statements,post_election,ad not published,87879,230517382,0.000381
+all statements,post_election,unspecified,68851,230517382,0.000299
+all statements,transition,account,538656,183024086,0.002943
+all statements,transition,monetary,12,183024086,0.0
+all statements,transition,provision of service,1052180,183024086,0.005749
+all statements,transition,visibility,181231093,183024086,0.990204
+all statements,transition,ad not published,187619,183024086,0.001025
+all statements,transition,unspecified,14478,183024086,7.9e-05
+all statements,transition,no measure named,48,183024086,0.0
+all statements,baseline_b,account,862602,175694743,0.00491
+all statements,baseline_b,monetary,33,175694743,0.0
+all statements,baseline_b,provision of service,880370,175694743,0.005011
+all statements,baseline_b,visibility,173576525,175694743,0.987944
+all statements,baseline_b,ad not published,370726,175694743,0.00211
+all statements,baseline_b,unspecified,4150,175694743,2.4e-05
+all statements,baseline_b,no measure named,337,175694743,2e-06
+election category,baseline_a,provision of service,10,1659570,6e-06
+election category,baseline_a,visibility,1659453,1659570,0.999929
+election category,baseline_a,unspecified,107,1659570,6.4e-05
+election category,campaign,provision of service,99,10621700,9e-06
+election category,campaign,visibility,10621374,10621700,0.999969
+election category,campaign,unspecified,227,10621700,2.1e-05
+election category,post_election,provision of service,335,13232573,2.5e-05
+election category,post_election,visibility,13231732,13232573,0.999936
+election category,post_election,unspecified,506,13232573,3.8e-05
+election category,transition,provision of service,612,6500766,9.4e-05
+election category,transition,visibility,6498856,6500766,0.999706
+election category,transition,unspecified,1298,6500766,0.0002
+election category,baseline_b,provision of service,44,5213569,8e-06
+election category,baseline_b,visibility,5213186,5213569,0.999927
+election category,baseline_b,unspecified,339,5213569,6.5e-05

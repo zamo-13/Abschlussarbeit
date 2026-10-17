@@ -1,0 +1,13 @@
+platform,measure_type,n,platform_total,share_of_statements
+TikTok,account,3633217,824228641,0.004408
+TikTok,monetary,4012,824228641,5e-06
+TikTok,provision of service,4169699,824228641,0.005059
+TikTok,visibility,815410215,824228641,0.989301
+TikTok,ad not published,765762,824228641,0.000929
+TikTok,unspecified,240472,824228641,0.000292
+TikTok,no measure named,5264,824228641,6e-06
+X,account,22120,132191,0.167334
+X,provision of service,75072,132191,0.567906
+X,visibility,6,132191,4.5e-05
+X,unspecified,36,132191,0.000272
+X,no measure named,34957,132191,0.264443
