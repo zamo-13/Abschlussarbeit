@@ -1,0 +1,6 @@
+period,n_total,n_fully_automated,share_fully_automated
+baseline_a,61993,61295,0.988741
+campaign,86532,81439,0.941143
+post_election,79027,73140,0.925506
+transition,443415,111206,0.250794
+baseline_b,924322,909340,0.983791

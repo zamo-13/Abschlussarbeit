@@ -1,0 +1,6 @@
+period,days,n_total,n_election,share_election,rel_to_baseline_a
+baseline_a,19,61993,1,1.6e-05,1.0
+campaign,35,86532,0,0.0,0.0
+post_election,36,79027,21,0.000266,16.625
+transition,30,443415,202,0.000456,28.5
+baseline_b,61,924322,19,2.1e-05,1.3125
