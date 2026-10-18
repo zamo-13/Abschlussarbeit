@@ -17,7 +17,7 @@ TT's own report counted one item under every violated policy until H2 2025 (TT a
 **describe + compare periods, no significance tests**
 824M rows -> basically every difference is "significant", p-values say nothing. so effect sizes (ratios, pp).
 regression like Groesch 26 makes no sense with 2 platforms.
-need a methods source here: Lin, Lucas & Shmueli 2013 ("too big to fail", ISR). not in literature/ yet, get it.
+methods source: Lin, Lucas & Shmueli 2013 ("too big to fail", ISR 24(4), 906-917), in literature/ now. abstract p. 906: in very large samples p-values go quickly to zero, relying on them alone can mean claiming results of no practical significance.
 
 **Germany = DE in territorial_scope, not the DE-only rows**
 DE-only = 1.69M rows (0.2%) and it's a different population: 66% OTHER content type, almost no images, the civic cat. shows up 251 times.
@@ -91,6 +91,7 @@ but: the cat. is 40-48% of TT's image moderation even outside the election. TT u
 in the category ~90% "not recommended", only ~9-18% removal. overall ~60% removal.
 campaign didn't change it (10.5 -> 9.1%, and the two baselines disagree: 10.5 vs 17.7) -> no event effect, just drift.
 soft gate: Zeng & Kaye 22 (visibility moderation), Donohue via Wallace (shaping/display).
+maybe: Horta Ribeiro 23 found hiding (not deleting) comments had small, insignificant effects on later rule-breaking. so the soft gate might deter less. careful, that's Facebook comments, not TT images. speculative.
 
 **X: nothing in the category**
 0 statements in 6 months. narrow disclosure gate or really no moderation? can't tell (disclosure posture, 2.1).
