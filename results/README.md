@@ -10,10 +10,14 @@ the territorial scope, content posted 2025-01-01 to 2025-06-30), TikTok and X.
 - `t01d2_action_classes.csv` — Table 1d (second part), action classes within measure types — denominator: `platform_total`
 - `t02_automation_crosstab.csv` — Table 2, automation, detection × decision — denominator: `platform_total`
 - `t03_tiktok_automation_by_content_type.csv` — Table 3, automation by `content_type`, TikTok — denominator: `n_rows` (statements per content type; a statement counts once per type)
+- `t03b_content_types_by_platform.csv` — Table 3b, content types per platform — denominator: `platform_total` (all statements of the platform; a statement counts once per type)
 - `t04a_granularity_means.csv` — Table 4 (means), granularity per platform — denominator: `n_rows` (statements per platform)
 - `t04b_fill_rates.csv` — Table 4 (fill rates), fill rate of each optional attribute — denominator: `rows_tiktok`, `rows_x`
+- `t04c_decision_facts.csv` — Table 4c, `decision_facts` per platform (ten most frequent values, distinct counts before and after normalisation; read from `silver.analysis_*`) — denominator: `platform_total` (all statements of the platform)
 - `t05_weekly_election_share.csv` — Table 5, weekly election share — denominator: `n_total` (statements per platform and week)
 - `t06_period_summary.csv` — Table 6, period summary — denominator: `n_total` (statements per platform and period)
+- `t06b_independent_campaign_window.csv` — Table 6b, period summary with the independently defined campaign window (dissolution of the Bundestag to polling day; 2025-01-01 to 2025-02-23 within the data), TikTok — denominator: `n_total` (statements per period)
+- `t06c_daily_share_jan_13_27.csv` — Table 6c, daily share of the category, TikTok, 2025-01-13 to 2025-01-27 — denominator: `n_total` (statements per day)
 - `t07_weekly_automation_share.csv` — Table 7, weekly automation share — denominator: `n_total` (statements per platform and week)
 - `t08_weekly_granularity.csv` — Table 8, weekly mean granularity — denominator: `n_total` (statements per platform and week)
 - `t09_tiktok_daily_jan_mar.csv` — Table 9, TikTok daily series, 2025-01-01 to 2025-03-31 — denominator: `n_total` (statements per day)

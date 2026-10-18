@@ -9,6 +9,8 @@ TT = TikTok
 **TT + X instead of many platforms**
 Kaushal 24, Trujillo 25, Groesch 26 all compare 6-8 platforms at aggregate level -> can't isolate anything that way.
 careful: don't sell it as "max video vs text contrast". X has no text in the data at all (99.995% synthetic media), TT is 55% text. that's why modality is looked at inside TT.
+and it's not just "holding the platform constant": X has nothing to compare. one content type (synthetic media, 7 audio rows), and only 6 automated decisions. Groesch 26 found the same for X (99.84% synthetic media), so it's X's reporting, not my data.
+-> platform architecture (TT video-first, X text-first) stays the reason for picking the two, but modality can only be tested where content types vary = inside TT.
 
 **SoR database, not the transparency reports**
 reports are aggregate, half-yearly, every platform defines its own stuff (Urman & Makhortykh 23).
@@ -33,13 +35,16 @@ X has ~730 statements/day, daily is too noisy (CV 0.33 in April). monthly = 6 po
 both platforms have weekday effects, weeks remove them.
 
 **granularity = number of filled optional fields**
-not "quality of the free text": TT decision_facts has 7 distinct values. nothing to analyse there.
+not "quality of the free text": TT decision_facts has 8 distinct values (7 after normalising), tab 4c. nothing to analyse there.
 strict count is the main one, because the conditional fields depend on decision_ground and X/TT use different grounds.
 
 **campaign window**
 the periods in tab 6 were set after looking at the data (jump on 20 Jan). circular, can't carry the result alone.
 independent window: dissolution of the Bundestag (27 Dec 24) to election day -> 1 Jan-23 Feb in my data.
 5.41% vs 2.97% in May-Jun = 1.82x (tab 6b). still holds. need a source for the dissolution date.
+data starts 1 Jan (scope = content posted 2025), so the first 5 campaign days (27-31 Dec, holidays) are missing -> 54 of 59 days. one sentence in ch 3.
+"campaign" = my window, not the parties' campaign. DE has no official campaign start, parties campaigned since the coalition broke (6 Nov 24), confidence vote lost 16 Dec, dissolution 27 Dec, election 23 Feb (sources for all). 27 Dec = the formal act that fixed the election, so it's an outside anchor. define the term once in ch 3.
+bigger point: no pre-campaign period in my data at all. that's why the comparison is campaign vs May-Jun (after), not before vs during. limitation: can't rule out a seasonal / platform-wide change between Jan-Feb and May-Jun.
 
 **application_date as time axis**
 like Trujillo 25, Groesch 26, Shahi 25. hardly matters here: 96% of TT is decided the same day it's posted, X always.
@@ -102,7 +107,8 @@ the fields barely overlap: X fills illegal_*, TT fills incompatible_* (fig 4). m
 -> the DB can't carry the cross-platform comparison it was built for (Groesch 26, Trujillo 25).
 
 **TT decision_facts = one sentence**
-7 distinct values, 97.25% is "The decision was taken pursuant to own-initiative investigations."
+full data (tab 4c): 8 distinct values, 7 after normalising. "The decision was taken pursuant to own-initiative investigations." = 98.04%, plus 1.32% the same sentence without the full stop -> 99.36% one sentence. (the 97.25% from the early 5-day sample is outdated, don't use it)
+X: 10 values, all "action X triggered manually by an agent", except 6 "triggered by the system" = exactly the 6 automated decisions in tab 2.
 Kaushal 24 said explanations are vague, this puts a number on it. Art. 17(3)(b) DSA asks for the facts and circumstances.
 
 **X names no measure in 26.4%**
