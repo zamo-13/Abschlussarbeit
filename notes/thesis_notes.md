@@ -19,7 +19,11 @@ TT's own report counted one item under every violated policy until H2 2025 (TT a
 **describe + compare periods, no significance tests**
 824M rows -> basically every difference is "significant", p-values say nothing. so effect sizes (ratios, pp).
 regression like Groesch 26 makes no sense with 2 platforms.
-methods source: Lin, Lucas & Shmueli 2013 ("too big to fail", ISR 24(4), 906-917), in literature/ now. abstract p. 906: in very large samples p-values go quickly to zero, relying on them alone can mean claiming results of no practical significance.
+method itself: quantitative content analysis of existing records. Krippendorff 2004 (2nd ed, that's the edition I have, file name says 2019), p. 18: "a research technique for making replicable and valid inferences from texts (or other meaningful matter) to the contexts of their use". Groesch 26 also calls the SoR schema a codebook for content analysis.
+case selection: Seawright & Gerring 2008, p. 300, "diverse case" method = at least two cases covering the full range. TT video-first, X text-first. say "diverse", not "most different" (that means something else in their typology).
+before/after comparison: Shadish, Cook & Campbell 2002, ch. 6 (interrupted time series). p. 172: compare before/after a known point in time. p. 179: "the major threat to internal validity is history", other forces at the same time. = my 20 Jan problem. careful: I compare periods, I don't fit a time-series model -> "follows the logic of", not "is".
+dissolution date: Steinmeier statement 27 Dec 2024 (literature/241227-Statement-Aufloesung-BT.pdf): Bundestag dissolved, election set for 23 Feb 2025.
+effect sizes: Lin, Lucas & Shmueli 2013 ("too big to fail", ISR 24(4), 906-917), in literature/ now. abstract p. 906: in very large samples p-values go quickly to zero, relying on them alone can mean claiming results of no practical significance.
 
 **Germany = DE in territorial_scope, not the DE-only rows**
 DE-only = 1.69M rows (0.2%) and it's a different population: 66% OTHER content type, almost no images, the civic cat. shows up 251 times.
