@@ -1,12 +1,12 @@
 platform,rank,decision_facts,n,platform_total,share_of_statements,n_distinct,n_distinct_normalised
-TikTok,1,The decision was taken pursuant to own-initiative investigations.,808097224,824228641,0.980428,8,7
-TikTok,2,The decision was taken pursuant to own-initiative investigations,10895160,824228641,0.013219,8,7
-TikTok,3,The decision was taken in response to a report alleging a violation of our Community Guidelines.,5146598,824228641,0.006244,8,7
-TikTok,4,The decision was taken in response to a report alleging a violation of our Advertising Policies.,67187,824228641,8.2e-05,8,7
-TikTok,5,The decision was taken in response to an illegal content report under Art. 16 DSA.,21796,824228641,2.6e-05,8,7
-TikTok,6,We have taken this decision based on a report under the ElDigital Services Act.,413,824228641,1e-06,8,7
-TikTok,7,The decision was taken in response to a report from a third party.,236,824228641,0.0,8,7
-TikTok,8,The decision was taken in response to a report from a Trusted Flagger under Art. 22 DSA.,27,824228641,0.0,8,7
+TikTok,1,The decision was taken pursuant to own-initiative investigations.,808097250,824228667,0.980428,8,7
+TikTok,2,The decision was taken pursuant to own-initiative investigations,10895160,824228667,0.013219,8,7
+TikTok,3,The decision was taken in response to a report alleging a violation of our Community Guidelines.,5146598,824228667,0.006244,8,7
+TikTok,4,The decision was taken in response to a report alleging a violation of our Advertising Policies.,67187,824228667,8.2e-05,8,7
+TikTok,5,The decision was taken in response to an illegal content report under Art. 16 DSA.,21796,824228667,2.6e-05,8,7
+TikTok,6,We have taken this decision based on a report under the ElDigital Services Act.,413,824228667,1e-06,8,7
+TikTok,7,The decision was taken in response to a report from a third party.,236,824228667,0.0,8,7
+TikTok,8,The decision was taken in response to a report from a Trusted Flagger under Art. 22 DSA.,27,824228667,0.0,8,7
 X,1,Decision - action Bounce triggered manually by an agent,75063,132191,0.567837,10,10
 X,2,Decision - action Nsfw triggered manually by an agent,34945,132191,0.264352,10,10
 X,3,Decision - action Suspend triggered manually by an agent,22001,132191,0.166433,10,10

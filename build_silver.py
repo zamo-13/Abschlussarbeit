@@ -2,8 +2,10 @@
 
 Run as a script because the TikTok write takes hours:
 
-    python build_silver.py x        # seconds
-    python build_silver.py tiktok   # ~2.3 h with cached duplicate sets, ~4.6 h without
+    python build_silver.py x      [out_root]   # seconds
+    python build_silver.py tiktok [out_root]   # ~2.3 h with cached duplicate sets, ~4.7 h without
+
+out_root defaults to config.SILVER_ROOT; pass a new folder to rebuild without touching the old one.
 
 Design notes
 ------------
@@ -13,12 +15,16 @@ Design notes
   are NOT sorted by ``application_date``: the dumps arrive in submission order, so unsorted row
   groups already span ~1.1 days of ``application_date`` (0.4 when sorted), and a sort costs
   ~2.6 h per partition for ~20% on cold full scans and no gain on windowed queries
-  (measured 2026-10-03). The January TikTok partition is sorted as a by-product of that
-  abandoned pass; sorting changes no values.
+  (measured 2026-10-03).
 * Deduplication is global across the whole period. A window function over all
   ~980M wide rows would spill tens of GB, so the duplicate identifiers are collected in two
   narrow passes first; only the affected rows then pass through the window. Those two passes
   cost ~2.7 h on TikTok, so their result is cached under ``silver_meta`` and reused on a retry.
+  Duplicates are resolved sequentially with one total order (created_at, uuid, source_file,
+  platform_uid): first one row per platform_uid, then one row per uuid among those survivors.
+  A rebuild therefore always keeps the same row, and no statement loses all its rows. (Until
+  2026-10-20 the two windows were combined with AND and broke ties independently, which dropped
+  383 statements entirely.)
 * JSON array attributes are parsed to native lists but NOT unnested: one Silver row
   stays one statement of reasons.
 """
@@ -117,13 +123,13 @@ def dup_set(con, platform: str, src: str, key: str) -> int:
     return n
 
 
-def build(platform: str) -> None:
+def build(platform: str, out_root: Path = SILVER_ROOT) -> None:
     con = connect()
     con.execute("SET preserve_insertion_order = false")   # no global ordering during the write
     con.execute("SET max_temp_directory_size = '300GiB'") # fail fast instead of filling the disk
     con.execute("SET threads = 6")
     src = f"silver.scoped_{platform}"
-    out = (SILVER_ROOT).as_posix()
+    out = Path(out_root).as_posix()
     t0 = time.time()
 
     rows_in = con.sql(f"SELECT count(*) FROM {src}").fetchone()[0]
@@ -154,20 +160,24 @@ def build(platform: str) -> None:
         )""")
     print(f"[{platform}] clean rows written  ({time.time()-t:.0f}s)", flush=True)
 
+    # One row per statement, deterministic. Sequential, not an AND of two windows.
+    order = "created_at, uuid, source_file, platform_uid"
     t = time.time()
     con.execute(f"""
         COPY (
             SELECT * FROM (
-                SELECT {select_clause()} FROM {src}
-                WHERE {plausible} AND ({is_dup})
+                SELECT * FROM (
+                    SELECT {select_clause()} FROM {src}
+                    WHERE {plausible} AND ({is_dup})
+                )
+                QUALIFY row_number() OVER (PARTITION BY platform_uid ORDER BY {order}) = 1
             )
-            QUALIFY row_number() OVER (PARTITION BY platform_uid ORDER BY created_at) = 1
-                AND row_number() OVER (PARTITION BY uuid ORDER BY created_at) = 1
+            QUALIFY row_number() OVER (PARTITION BY uuid ORDER BY {order}) = 1
         ) TO '{out}' (
             FORMAT PARQUET, COMPRESSION ZSTD,
             PARTITION_BY (platform, month),
             APPEND, FILENAME_PATTERN '{platform}_dedup_{{uuid}}'
-        )""")                                                        # earliest created_at
+        )""")
     print(f"[{platform}] deduplicated rows written  ({time.time()-t:.0f}s)", flush=True)
 
     rows_out = con.sql(
@@ -179,4 +189,4 @@ def build(platform: str) -> None:
 
 
 if __name__ == "__main__":
-    build(sys.argv[1])
+    build(sys.argv[1], *(sys.argv[2:3]))

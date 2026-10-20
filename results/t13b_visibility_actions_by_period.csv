@@ -20,11 +20,11 @@ all statements,transition,not recommended in feed and search,4561982,181231093,0
 all statements,transition,age restricted,774698,181231093,0.004275
 all statements,transition,content disabled,4082,181231093,2.3e-05
 all statements,transition,review removed or hidden,11,181231093,0.0
-all statements,baseline_b,content removed,113165575,173576525,0.651964
-all statements,baseline_b,not recommended in feed,55615098,173576525,0.320407
-all statements,baseline_b,not recommended in feed and search,3727696,173576525,0.021476
-all statements,baseline_b,age restricted,1063455,173576525,0.006127
-all statements,baseline_b,content disabled,4701,173576525,2.7e-05
+all statements,baseline_b,content removed,113165578,173576546,0.651964
+all statements,baseline_b,not recommended in feed,55615116,173576546,0.320407
+all statements,baseline_b,not recommended in feed and search,3727696,173576546,0.021476
+all statements,baseline_b,age restricted,1063455,173576546,0.006127
+all statements,baseline_b,content disabled,4701,173576546,2.7e-05
 election category,baseline_a,not recommended in feed,939606,1659453,0.566214
 election category,baseline_a,not recommended in feed and search,543512,1659453,0.327525
 election category,baseline_a,content removed,174800,1659453,0.105336

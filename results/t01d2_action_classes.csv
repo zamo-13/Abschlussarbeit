@@ -1,22 +1,22 @@
 platform,measure_type,action_class,n,platform_total,share_of_statements
-TikTok,account,account terminated,3631920,824228641,0.004406
-TikTok,account,account suspended,1297,824228641,2e-06
-TikTok,monetary,payment restriction,4001,824228641,5e-06
-TikTok,monetary,monetary: suspension,11,824228641,0.0
-TikTok,provision of service,service partially suspended,2939338,824228641,0.003566
-TikTok,provision of service,product restriction,760076,824228641,0.000922
-TikTok,provision of service,shop restriction,330410,824228641,0.000401
-TikTok,provision of service,LIVE feature restriction,136086,824228641,0.000165
-TikTok,provision of service,creator sales restriction,3789,824228641,5e-06
-TikTok,visibility,content removed,502045158,824228641,0.609109
-TikTok,visibility,not recommended in feed,286171782,824228641,0.3472
-TikTok,visibility,not recommended in feed and search,23811828,824228641,0.02889
-TikTok,visibility,age restricted,3360738,824228641,0.004077
-TikTok,visibility,content disabled,20698,824228641,2.5e-05
-TikTok,visibility,review removed or hidden,11,824228641,0.0
-TikTok,ad not published,ad not published,765762,824228641,0.000929
-TikTok,unspecified,unspecified code or term,240472,824228641,0.000292
-TikTok,no measure named,violation points or warning,5264,824228641,6e-06
+TikTok,account,account terminated,3631920,824228667,0.004406
+TikTok,account,account suspended,1297,824228667,2e-06
+TikTok,monetary,payment restriction,4001,824228667,5e-06
+TikTok,monetary,monetary: suspension,11,824228667,0.0
+TikTok,provision of service,service partially suspended,2939338,824228667,0.003566
+TikTok,provision of service,product restriction,760076,824228667,0.000922
+TikTok,provision of service,shop restriction,330410,824228667,0.000401
+TikTok,provision of service,LIVE feature restriction,136086,824228667,0.000165
+TikTok,provision of service,creator sales restriction,3789,824228667,5e-06
+TikTok,visibility,content removed,502045161,824228667,0.609109
+TikTok,visibility,not recommended in feed,286171804,824228667,0.3472
+TikTok,visibility,not recommended in feed and search,23811828,824228667,0.02889
+TikTok,visibility,age restricted,3360739,824228667,0.004077
+TikTok,visibility,content disabled,20698,824228667,2.5e-05
+TikTok,visibility,review removed or hidden,11,824228667,0.0
+TikTok,ad not published,ad not published,765762,824228667,0.000929
+TikTok,unspecified,unspecified code or term,240472,824228667,0.000292
+TikTok,no measure named,violation points or warning,5264,824228667,6e-06
 X,account,account suspended,22001,132191,0.166433
 X,account,account terminated,119,132191,0.0009
 X,provision of service,service partially suspended,75069,132191,0.567883
