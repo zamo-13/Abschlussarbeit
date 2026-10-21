@@ -1,0 +1,16 @@
+check_sha1: true
+chunk_format: parquet
+chunk_size: 1000000
+delete_original: false
+do_chunking: true
+dump_files_folder: /data/x___full
+force_sha1: false
+from_date: 2025-01-01
+loglevel: 20
+n_processes: 1
+override_chunked_subfolder: daily_dumps_chunked
+platform: x
+platforms_to_exclude: null
+raise_on_error: true
+to_date: 2025-12-31
+version: full
