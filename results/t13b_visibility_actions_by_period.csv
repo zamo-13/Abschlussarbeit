@@ -20,11 +20,11 @@ all statements,transition,not recommended in feed and search,4561982,181231093,0
 all statements,transition,age restricted,774698,181231093,0.004275
 all statements,transition,content disabled,4082,181231093,2.3e-05
 all statements,transition,review removed or hidden,11,181231093,0.0
-all statements,baseline_b,content removed,113165578,173576546,0.651964
-all statements,baseline_b,not recommended in feed,55615116,173576546,0.320407
-all statements,baseline_b,not recommended in feed and search,3727696,173576546,0.021476
-all statements,baseline_b,age restricted,1063455,173576546,0.006127
-all statements,baseline_b,content disabled,4701,173576546,2.7e-05
+all statements,baseline_b,content removed,113164763,173574959,0.651965
+all statements,baseline_b,not recommended in feed,55614979,173574959,0.320409
+all statements,baseline_b,not recommended in feed and search,3727061,173574959,0.021472
+all statements,baseline_b,age restricted,1063455,173574959,0.006127
+all statements,baseline_b,content disabled,4701,173574959,2.7e-05
 election category,baseline_a,not recommended in feed,939606,1659453,0.566214
 election category,baseline_a,not recommended in feed and search,543512,1659453,0.327525
 election category,baseline_a,content removed,174800,1659453,0.105336
@@ -44,8 +44,8 @@ election category,transition,not recommended in feed and search,1471080,6498856,
 election category,transition,content removed,724893,6498856,0.111542
 election category,transition,age restricted,4943,6498856,0.000761
 election category,transition,content disabled,18,6498856,3e-06
-election category,baseline_b,not recommended in feed,2353526,5213186,0.451456
-election category,baseline_b,not recommended in feed and search,1929367,5213186,0.370094
-election category,baseline_b,content removed,923883,5213186,0.17722
-election category,baseline_b,age restricted,6403,5213186,0.001228
-election category,baseline_b,content disabled,7,5213186,1e-06
+election category,baseline_b,not recommended in feed,2353405,5212400,0.451501
+election category,baseline_b,not recommended in feed and search,1928930,5212400,0.370066
+election category,baseline_b,content removed,923655,5212400,0.177203
+election category,baseline_b,age restricted,6403,5212400,0.001228
+election category,baseline_b,content disabled,7,5212400,1e-06

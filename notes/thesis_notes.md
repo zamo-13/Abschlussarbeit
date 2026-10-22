@@ -17,7 +17,7 @@ reports are aggregate, half-yearly, every platform defines its own stuff (Urman 
 TT's own report counted one item under every violated policy until H2 2025 (TT additional doc, section 2). the DB doesn't do that.
 
 **describe + compare periods, no significance tests**
-824M rows -> basically every difference is "significant", p-values say nothing. so effect sizes (ratios, pp).
+816M rows -> basically every difference is "significant", p-values say nothing. so effect sizes (ratios, pp).
 regression like Groesch 26 makes no sense with 2 platforms.
 method itself: quantitative content analysis of existing records. Krippendorff 2004 (2nd ed, that's the edition I have, file name says 2019), p. 18: "a research technique for making replicable and valid inferences from texts (or other meaningful matter) to the contexts of their use". Groesch 26 also calls the SoR schema a codebook for content analysis.
 case selection: Seawright & Gerring 2008, p. 300, "diverse case" method = at least two cases covering the full range. TT video-first, X text-first. say "diverse", not "most different" (that means something else in their typology).
@@ -26,9 +26,14 @@ dissolution date: Steinmeier statement 27 Dec 2024 (literature/241227-Statement-
 effect sizes: Lin, Lucas & Shmueli 2013 ("too big to fail", ISR 24(4), 906-917), in literature/ now. abstract p. 906: in very large samples p-values go quickly to zero, relying on them alone can mean claiming results of no practical significance.
 
 **Germany = DE in territorial_scope, not the DE-only rows**
-DE-only = 1.69M rows (0.2%) and it's a different population: 66% OTHER content type, almost no images, the civic cat. shows up 251 times.
+DE-only = 1.60M rows (0.2%) and it's a different population: 65% OTHER content type, almost no images, the civic cat. shows up 243 times.
 P&V 25: 99% of decisions apply EEA-wide anyway.
 -> DE-only check is inconclusive, not negative. report it like that.
+
+**only statements submitted before 1 July**
+schema changed 1 July 2025. content posted in H1 but submitted from July went in with the new form: 7.78M TT (0.94%), 42 X. 7.2M of them carry categories that only exist in the new form (e.g. "other violation of T&C"). so analysis set = posted Jan-Jun AND submitted before July.
+follows from the schema reason, not from results: the period shares don't move (1.82 stays), TT automation +0.2 pp.
+the dedup / implausible-date numbers in ch 3 (302,411 etc.) are about content posted Jan-Jun before this rule -> name that population, don't call it the analysis set.
 
 **shares, not counts**
 TT volume more than doubles Jan -> Mar for reasons that have nothing to do with the election.
@@ -51,13 +56,13 @@ data starts 1 Jan (scope = content posted 2025), so the first 5 campaign days (2
 bigger point: no pre-campaign period in my data at all. that's why the comparison is campaign vs May-Jun (after), not before vs during. limitation: can't rule out a seasonal / platform-wide change between Jan-Feb and May-Jun.
 
 **application_date as time axis**
-like Trujillo 25, Groesch 26, Shahi 25. hardly matters here: 96% of TT is decided the same day it's posted, X always.
+like Trujillo 25, Groesch 26, Shahi 25. hardly matters here: 97% of TT is decided the same day it's posted, X always.
 
 
 ## results -> what they mean (ch 5)
 
 **automation is the other way round than Gorwa 20 expects**
-speech 98.8%, elections 99.2% automated vs porn 59%, minors 41.6%. by type: text 99.2 > video 93.3 > image 89.5 (fig 2).
+speech 98.8%, elections 99.2% automated vs porn 59%, minors 41.9%. by type: text 99.5 > video 93.3 > image 89.6 (fig 2).
 Gorwa: visual/hash stuff should be the most automated. it's the least.
 my reading: automation follows how bad a mistake would be, not how easy detection is. sensitive cats go to humans even where classifiers exist.
 fits gatekeeping: selection criteria follow what the org wants (Wallace 17, Klonick 18).
@@ -68,14 +73,14 @@ maybe TT "text" is mostly comments, done with keyword matching. also speculative
 careful: the category mix is different per content type, so it's not clean.
 
 **more automation = less detail? (H1)**
-inside TT: 1.003 fields automated vs 1.115 manual (tab 11). right direction but basically nothing.
+inside TT: 1.003 fields fully automated vs 1.123 not fully automated (tab 11). right direction but basically nothing.
 TT reports sit at the schema minimum no matter who decides -> the detail is set by the reporting pipeline, not by who decides. that's the disclosure gate from 2.4.
 don't call it a correlation, 2 platforms.
 
 **the rise during the campaign (H2)**
 1.82x with the independent window.
 starts exactly on 20 Jan. same day as the US inauguration, 2 days after TT went dark in the US. in DE: Aschaffenburg 22 Jan, Bundestag migration vote 29 Jan. (check all dates + find sources)
-the category is applied almost only EEA-wide (251 DE-only vs 37.3M) -> the DB can't tell whose politics drove it.
+the category is applied almost only EEA-wide (243 DE-only vs 37.2M) -> the DB can't tell whose politics drove it.
 so: "rise during the campaign, cause can't be attributed". NOT "TT reacted to the election".
 fits Zimmer 26 (attribution problem) and my own point in 2.1. it's a limit of the DB, which is kind of my whole argument anyway.
 
@@ -111,7 +116,7 @@ the fields barely overlap: X fills illegal_*, TT fills incompatible_* (fig 4). m
 -> the DB can't carry the cross-platform comparison it was built for (Groesch 26, Trujillo 25).
 
 **TT decision_facts = one sentence**
-full data (tab 4c): 8 distinct values, 7 after normalising. "The decision was taken pursuant to own-initiative investigations." = 98.04%, plus 1.32% the same sentence without the full stop -> 99.36% one sentence. (the 97.25% from the early 5-day sample is outdated, don't use it)
+full data (tab 4c): 8 distinct values, 7 after normalising. "The decision was taken pursuant to own-initiative investigations." = 98.07%, plus 1.31% the same sentence without the full stop -> 99.38% one sentence. (the 97.25% from the early 5-day sample is outdated, don't use it)
 X: 10 values, all "action X triggered manually by an agent", except 6 "triggered by the system" = exactly the 6 automated decisions in tab 2.
 Kaushal 24 said explanations are vague, this puts a number on it. Art. 17(3)(b) DSA asks for the facts and circumstances.
 

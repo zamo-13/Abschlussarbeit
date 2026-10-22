@@ -21,13 +21,13 @@ all statements,transition,visibility,181231093,183024086,0.990204
 all statements,transition,ad not published,187619,183024086,0.001025
 all statements,transition,unspecified,14478,183024086,7.9e-05
 all statements,transition,no measure named,48,183024086,0.0
-all statements,baseline_b,account,862602,175694764,0.00491
-all statements,baseline_b,monetary,33,175694764,0.0
-all statements,baseline_b,provision of service,880370,175694764,0.005011
-all statements,baseline_b,visibility,173576546,175694764,0.987944
-all statements,baseline_b,ad not published,370726,175694764,0.00211
-all statements,baseline_b,unspecified,4150,175694764,2.4e-05
-all statements,baseline_b,no measure named,337,175694764,2e-06
+all statements,baseline_b,account,862518,175692625,0.004909
+all statements,baseline_b,monetary,33,175692625,0.0
+all statements,baseline_b,provision of service,879914,175692625,0.005008
+all statements,baseline_b,visibility,173574959,175692625,0.987947
+all statements,baseline_b,ad not published,370717,175692625,0.00211
+all statements,baseline_b,unspecified,4147,175692625,2.4e-05
+all statements,baseline_b,no measure named,337,175692625,2e-06
 election category,baseline_a,provision of service,10,1659570,6e-06
 election category,baseline_a,visibility,1659453,1659570,0.999929
 election category,baseline_a,unspecified,107,1659570,6.4e-05
@@ -40,6 +40,6 @@ election category,post_election,unspecified,506,13232573,3.8e-05
 election category,transition,provision of service,612,6500766,9.4e-05
 election category,transition,visibility,6498856,6500766,0.999706
 election category,transition,unspecified,1298,6500766,0.0002
-election category,baseline_b,provision of service,44,5213569,8e-06
-election category,baseline_b,visibility,5213186,5213569,0.999927
-election category,baseline_b,unspecified,339,5213569,6.5e-05
+election category,baseline_b,provision of service,44,5212782,8e-06
+election category,baseline_b,visibility,5212400,5212782,0.999927
+election category,baseline_b,unspecified,338,5212782,6.5e-05

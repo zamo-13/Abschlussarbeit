@@ -216,7 +216,7 @@ python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.time
 | Step | Produces |
 |---|---|
 | `01_bronze` | Checks the 365 days per platform. Registers the Bronze views over the parquet chunks and profiles the raw data. |
-| `02_silver` | Applies the scope (Germany in the territorial scope, content posted in 2025) and documents the schema change of 1 July 2025. Builds Silver by calling `build_silver.py`, which takes most of the runtime. Checks the result and defines the analysis set: content posted from 2025-01-01 to 2025-06-30. |
+| `02_silver` | Applies the scope (Germany in the territorial scope, content posted in 2025) and documents the schema change of 1 July 2025. Builds Silver by calling `build_silver.py`, which takes most of the runtime. Checks the result and defines the analysis set: content posted from 2025-01-01 to 2025-06-30 and submitted before 2025-07-01, when the submission schema changed. |
 | `03_gold` | Defines the Gold views. Writes the 29 CSV files in `results/`. |
 | `04_figures` | Writes the 5 figures in `results/figures/`. |
 
@@ -239,7 +239,9 @@ Row counts at each step, as printed by `02_silver` §5.1 and §6:
 | removed: application date before content date | 2,499 | 0 |
 | removed: duplicate submissions | 337,745 | 0 |
 | **Silver** | **979,556,200** | **183,321** |
-| **Analysis set** (content posted 2025-01-01 to 2025-06-30) | **824,228,667** | **132,191** |
+| removed: content posted from 2025-07-01 | 155,327,533 | 51,130 |
+| removed: submitted from 2025-07-01 (new submission schema) | 7,782,575 | 42 |
+| **Analysis set** (content posted 2025-01-01 to 2025-06-30, submitted before 2025-07-01) | **816,446,092** | **132,149** |
 
 - **Deduplication is deterministic.** Each statement keeps exactly one row: the earliest submission
   (`created_at`), with ties broken by `uuid` and then by source file. A rebuild therefore gives the

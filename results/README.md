@@ -1,7 +1,7 @@
 # results/
 
 Frozen figure tables written by `03_gold.ipynb`. Population for all tables: the analysis set (Germany in
-the territorial scope, content posted 2025-01-01 to 2025-06-30), TikTok and X.
+the territorial scope, content posted 2025-01-01 to 2025-06-30, statement submitted before 2025-07-01), TikTok and X.
 
 - `t01a_decision_visibility_coded.csv` — Table 1a, coded `decision_visibility` — denominator: `platform_total` (all statements of the platform; a statement counts once per value)
 - `t01b_provision_account_coded.csv` — Table 1b, coded service and account measures — denominator: `platform_total`

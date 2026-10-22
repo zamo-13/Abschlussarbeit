@@ -1,19 +1,19 @@
 platform,rank,decision_facts,n,platform_total,share_of_statements,n_distinct,n_distinct_normalised
-TikTok,1,The decision was taken pursuant to own-initiative investigations.,808097250,824228667,0.980428,8,7
-TikTok,2,The decision was taken pursuant to own-initiative investigations,10895160,824228667,0.013219,8,7
-TikTok,3,The decision was taken in response to a report alleging a violation of our Community Guidelines.,5146598,824228667,0.006244,8,7
-TikTok,4,The decision was taken in response to a report alleging a violation of our Advertising Policies.,67187,824228667,8.2e-05,8,7
-TikTok,5,The decision was taken in response to an illegal content report under Art. 16 DSA.,21796,824228667,2.6e-05,8,7
-TikTok,6,We have taken this decision based on a report under the ElDigital Services Act.,413,824228667,1e-06,8,7
-TikTok,7,The decision was taken in response to a report from a third party.,236,824228667,0.0,8,7
-TikTok,8,The decision was taken in response to a report from a Trusted Flagger under Art. 22 DSA.,27,824228667,0.0,8,7
-X,1,Decision - action Bounce triggered manually by an agent,75063,132191,0.567837,10,10
-X,2,Decision - action Nsfw triggered manually by an agent,34945,132191,0.264352,10,10
-X,3,Decision - action Suspend triggered manually by an agent,22001,132191,0.166433,10,10
-X,4,Decision - action Deactivate triggered manually by an agent,119,132191,0.0009,10,10
-X,5,Decision - action Ban triggered manually by an agent,36,132191,0.000272,10,10
-X,6,Decision - action Unban triggered manually by an agent,12,132191,9.1e-05,10,10
-X,7,Decision - action Bounce triggered by the system with no human intervention,6,132191,4.5e-05,10,10
-X,8,Decision - action AddTweetAnnotation triggered manually by an agent,6,132191,4.5e-05,10,10
-X,9,Decision - action RemoveVerifiedType triggered manually by an agent,2,132191,1.5e-05,10,10
-X,10,Decision - action RemoveBlueVerification triggered manually by an agent,1,132191,8e-06,10,10
+TikTok,1,The decision was taken pursuant to own-initiative investigations.,800668501,816446092,0.980675,8,7
+TikTok,2,The decision was taken pursuant to own-initiative investigations,10675390,816446092,0.013075,8,7
+TikTok,3,The decision was taken in response to a report alleging a violation of our Community Guidelines.,5014893,816446092,0.006142,8,7
+TikTok,4,The decision was taken in response to a report alleging a violation of our Advertising Policies.,66520,816446092,8.1e-05,8,7
+TikTok,5,The decision was taken in response to an illegal content report under Art. 16 DSA.,20142,816446092,2.5e-05,8,7
+TikTok,6,We have taken this decision based on a report under the ElDigital Services Act.,402,816446092,0.0,8,7
+TikTok,7,The decision was taken in response to a report from a third party.,233,816446092,0.0,8,7
+TikTok,8,The decision was taken in response to a report from a Trusted Flagger under Art. 22 DSA.,11,816446092,0.0,8,7
+X,1,Decision - action Bounce triggered manually by an agent,75025,132149,0.56773,10,10
+X,2,Decision - action Nsfw triggered manually by an agent,34944,132149,0.264429,10,10
+X,3,Decision - action Suspend triggered manually by an agent,21998,132149,0.166464,10,10
+X,4,Decision - action Deactivate triggered manually by an agent,119,132149,0.0009,10,10
+X,5,Decision - action Ban triggered manually by an agent,36,132149,0.000272,10,10
+X,6,Decision - action Unban triggered manually by an agent,12,132149,9.1e-05,10,10
+X,7,Decision - action AddTweetAnnotation triggered manually by an agent,6,132149,4.5e-05,10,10
+X,8,Decision - action Bounce triggered by the system with no human intervention,6,132149,4.5e-05,10,10
+X,9,Decision - action RemoveVerifiedType triggered manually by an agent,2,132149,1.5e-05,10,10
+X,10,Decision - action RemoveBlueVerification triggered manually by an agent,1,132149,8e-06,10,10

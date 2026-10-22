@@ -1,27 +1,27 @@
 platform,measure_type,action_class,n,platform_total,share_of_statements
-TikTok,account,account terminated,3631920,824228667,0.004406
-TikTok,account,account suspended,1297,824228667,2e-06
-TikTok,monetary,payment restriction,4001,824228667,5e-06
-TikTok,monetary,monetary: suspension,11,824228667,0.0
-TikTok,provision of service,service partially suspended,2939338,824228667,0.003566
-TikTok,provision of service,product restriction,760076,824228667,0.000922
-TikTok,provision of service,shop restriction,330410,824228667,0.000401
-TikTok,provision of service,LIVE feature restriction,136086,824228667,0.000165
-TikTok,provision of service,creator sales restriction,3789,824228667,5e-06
-TikTok,visibility,content removed,502045161,824228667,0.609109
-TikTok,visibility,not recommended in feed,286171804,824228667,0.3472
-TikTok,visibility,not recommended in feed and search,23811828,824228667,0.02889
-TikTok,visibility,age restricted,3360739,824228667,0.004077
-TikTok,visibility,content disabled,20698,824228667,2.5e-05
-TikTok,visibility,review removed or hidden,11,824228667,0.0
-TikTok,ad not published,ad not published,765762,824228667,0.000929
-TikTok,unspecified,unspecified code or term,240472,824228667,0.000292
-TikTok,no measure named,violation points or warning,5264,824228667,6e-06
-X,account,account suspended,22001,132191,0.166433
-X,account,account terminated,119,132191,0.0009
-X,provision of service,service partially suspended,75069,132191,0.567883
-X,provision of service,verification removed,3,132191,2.3e-05
-X,visibility,annotation added,6,132191,4.5e-05
-X,unspecified,"ban, type not stated",36,132191,0.000272
-X,no measure named,"NSFW, no measure named",34945,132191,0.264352
-X,no measure named,reversal (unban),12,132191,9.1e-05
+TikTok,account,account terminated,3488446,816446092,0.004273
+TikTok,account,account suspended,1296,816446092,2e-06
+TikTok,monetary,payment restriction,34,816446092,0.0
+TikTok,monetary,monetary: suspension,11,816446092,0.0
+TikTok,provision of service,service partially suspended,2938136,816446092,0.003599
+TikTok,provision of service,product restriction,702800,816446092,0.000861
+TikTok,provision of service,shop restriction,324597,816446092,0.000398
+TikTok,provision of service,LIVE feature restriction,136080,816446092,0.000167
+TikTok,provision of service,creator sales restriction,318,816446092,0.0
+TikTok,visibility,content removed,499851604,816446092,0.612229
+TikTok,visibility,not recommended in feed,280960885,816446092,0.344127
+TikTok,visibility,not recommended in feed and search,23754155,816446092,0.029095
+TikTok,visibility,age restricted,3271962,816446092,0.004008
+TikTok,visibility,content disabled,19760,816446092,2.4e-05
+TikTok,visibility,review removed or hidden,11,816446092,0.0
+TikTok,ad not published,ad not published,759507,816446092,0.00093
+TikTok,unspecified,unspecified code or term,236105,816446092,0.000289
+TikTok,no measure named,violation points or warning,385,816446092,0.0
+X,account,account suspended,21998,132149,0.166464
+X,account,account terminated,119,132149,0.0009
+X,provision of service,service partially suspended,75031,132149,0.567776
+X,provision of service,verification removed,3,132149,2.3e-05
+X,visibility,annotation added,6,132149,4.5e-05
+X,unspecified,"ban, type not stated",36,132149,0.000272
+X,no measure named,"NSFW, no measure named",34944,132149,0.264429
+X,no measure named,reversal (unban),12,132149,9.1e-05
