@@ -24,7 +24,7 @@ Everything below can be reproduced from this repository and the public database.
 | `input_manifest.csv` | File name, size and SHA-1 of all 730 raw daily dumps used |
 | `requirements.txt` | Pinned Python packages |
 | `notes/` | My working notes on method choices and results |
-| `NULL_columns.txt` | Early note on empty columns; not used by the code |
+| `notes/NULL_columns.txt` | Early note on empty columns; not used by the code |
 
 ## 1. Requirements
 
