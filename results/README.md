@@ -32,6 +32,8 @@ the territorial scope, content posted 2025-01-01 to 2025-06-30, statement submit
 - `t14b_de_only_weekly.csv` — Table 14b, weekly series, Germany-only TikTok statements — denominator: `n_total` (Germany-only statements per week)
 - `t14c_de_only_content_types.csv` — Table 14c, content types of the Germany-only statements — denominators: `subset_total` for `share_of_subset`, `category_total` for `share_of_category` (a statement counts once per type)
 - `t14d_de_only_automation.csv` — Table 14d, fully automated decisions per period, Germany-only TikTok statements — denominator: `n_total` (Germany-only statements per period)
+- `t15a_category_automation_by_period.csv` — Table 15a, fully automated decisions within the civic-discourse and elections category, TikTok: independent campaign window vs second baseline, and the five periods — denominator: `n_category` (category statements per period); `n_total_tiktok` for the overall share
+- `t15b_category_automation_weekly.csv` — Table 15b, fully automated decisions within the civic-discourse and elections category, TikTok, weekly — denominator: `n_category` (category statements per week); `n_total_tiktok` for the overall share
 
 ## figures/
 
